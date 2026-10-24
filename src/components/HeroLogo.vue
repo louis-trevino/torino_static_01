@@ -33,7 +33,7 @@ onMounted(() => (canHover.value = window.matchMedia('(hover: hover)').matches))
   <div class="hero-logo">
     <div class="logo-float" :class="{ paused: active !== null }">
       <svg
-        viewBox="-210 -210 420 420"
+        viewBox="-200 -200 400 400"
         class="logo-svg"
         role="group"
         aria-label="Torino Consulting Agentic AI capabilities"
@@ -114,7 +114,12 @@ onMounted(() => (canHover.value = window.matchMedia('(hover: hover)').matches))
 <style scoped>
 .hero-logo {
   width: 100%;
-  max-width: 400px;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.logo-float {
+  max-width: 270px;
   margin: 0 auto;
 }
 
@@ -135,8 +140,7 @@ onMounted(() => (canHover.value = window.matchMedia('(hover: hover)').matches))
 
 @media (max-width: 767.98px) {
   .logo-float {
-    max-width: 280px;
-    margin: 0 auto;
+    max-width: 240px;
   }
 }
 
@@ -242,9 +246,9 @@ onMounted(() => (canHover.value = window.matchMedia('(hover: hover)').matches))
 
 /* Message card */
 .node-card {
-  min-height: 8.5rem;
-  margin-top: 1.25rem;
-  padding: 1rem 1.25rem;
+  min-height: 7.5rem;
+  margin-top: 1rem;
+  padding: 0.85rem 1.1rem;
   border-radius: var(--bs-border-radius-lg);
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.14);

@@ -7,7 +7,7 @@ import HeroLogo from './HeroLogo.vue'
   <section id="home" class="hero text-white">
     <div class="container position-relative">
       <div class="row align-items-center g-5">
-        <div class="col-lg-7">
+        <div class="col-lg-7 hero-text">
           <span class="section-eyebrow hero-eyebrow">{{ hero.eyebrow }}</span>
           <h1 class="hero-title">{{ hero.title }}</h1>
           <p class="lead hero-lead mt-4">{{ hero.intro }}</p>
@@ -17,7 +17,7 @@ import HeroLogo from './HeroLogo.vue'
             <a href="#contact" class="btn btn-outline-light btn-lg px-4">Talk to an Expert</a>
           </div>
         </div>
-        <div class="col-lg-5 col-md-8 mx-auto">
+        <div class="col-lg-5 col-md-8 mx-auto align-self-lg-start hero-logo-col">
           <HeroLogo />
         </div>
       </div>
@@ -29,7 +29,7 @@ import HeroLogo from './HeroLogo.vue'
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 9rem 0 6rem;
+  padding: 6.5rem 0 4.5rem;
   background:
     radial-gradient(circle at 85% 30%, rgba(0, 180, 219, 0.28), transparent 45%),
     radial-gradient(circle at 10% 90%, rgba(37, 99, 235, 0.35), transparent 50%),
@@ -66,9 +66,15 @@ import HeroLogo from './HeroLogo.vue'
   max-width: 38rem;
 }
 
+@media (min-width: 992px) {
+  .hero-text {
+    padding-top: 2.5rem;
+  }
+}
+
 @media (max-width: 991.98px) {
   .hero {
-    padding: 7.5rem 0 4.5rem;
+    padding: 6.5rem 0 3.5rem;
   }
 }
 </style>
