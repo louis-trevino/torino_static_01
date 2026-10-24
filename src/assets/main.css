@@ -1,0 +1,112 @@
+/* Brand tokens, taken from the Torino logo */
+:root {
+  --torino-navy: #0b2d5b;
+  --torino-navy-deep: #071d3c;
+  --torino-blue: #2563eb;
+  --torino-blue-mid: #147fd7;
+  --torino-cyan: #00b4db;
+  --torino-slate: #526071;
+  --torino-surface: #f4f7fb;
+
+  --bs-primary: var(--torino-blue);
+  --bs-primary-rgb: 37, 99, 235;
+  --bs-body-font-family: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --bs-body-color: #1f2a37;
+  --bs-secondary-color: var(--torino-slate);
+  --bs-link-color: var(--torino-blue);
+  --bs-link-color-rgb: 37, 99, 235;
+  --bs-link-hover-color: var(--torino-navy);
+  --bs-border-radius: 0.6rem;
+  --bs-border-radius-lg: 0.9rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Leave room for the fixed navbar when jumping to a section */
+section[id] {
+  scroll-margin-top: 72px;
+}
+
+/* Buttons */
+.btn-primary {
+  --bs-btn-bg: var(--torino-blue);
+  --bs-btn-border-color: var(--torino-blue);
+  --bs-btn-hover-bg: #1d4fd0;
+  --bs-btn-hover-border-color: #1d4fd0;
+  --bs-btn-active-bg: #1a45b5;
+  --bs-btn-active-border-color: #1a45b5;
+  --bs-btn-disabled-bg: var(--torino-blue);
+  --bs-btn-disabled-border-color: var(--torino-blue);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--torino-blue);
+  --bs-btn-border-color: var(--torino-blue);
+  --bs-btn-hover-bg: var(--torino-blue);
+  --bs-btn-hover-border-color: var(--torino-blue);
+  --bs-btn-active-bg: var(--torino-blue);
+  --bs-btn-active-border-color: var(--torino-blue);
+}
+
+.form-check-input:checked {
+  background-color: var(--torino-blue);
+  border-color: var(--torino-blue);
+}
+
+.form-control:focus,
+.form-check-input:focus {
+  border-color: #86a8f5;
+  box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.2);
+}
+
+/* Shared section styling */
+.section {
+  padding: 5rem 0;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--torino-blue);
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-weight: 800;
+  color: var(--torino-navy);
+  letter-spacing: -0.01em;
+}
+
+.bg-surface {
+  background-color: var(--torino-surface);
+}
+
+.icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--torino-navy), var(--torino-blue-mid) 55%, var(--torino-cyan));
+  flex-shrink: 0;
+}
+
+@media (max-width: 767.98px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+}
