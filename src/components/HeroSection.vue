@@ -1,6 +1,6 @@
 <script setup>
 import { hero } from '../content'
-import markLight from '../assets/torino-mark-light.svg'
+import HeroLogo from './HeroLogo.vue'
 </script>
 
 <template>
@@ -17,8 +17,8 @@ import markLight from '../assets/torino-mark-light.svg'
             <a href="#contact" class="btn btn-outline-light btn-lg px-4">Talk to an Expert</a>
           </div>
         </div>
-        <div class="col-lg-5 d-none d-lg-flex justify-content-center">
-          <img :src="markLight" alt="" class="hero-mark" width="360" height="404" />
+        <div class="col-lg-5 col-md-8 mx-auto">
+          <HeroLogo />
         </div>
       </div>
     </div>
@@ -64,26 +64,6 @@ import markLight from '../assets/torino-mark-light.svg'
 .hero-detail {
   color: rgba(255, 255, 255, 0.72);
   max-width: 38rem;
-}
-
-.hero-mark {
-  width: 100%;
-  max-width: 340px;
-  height: auto;
-  filter: drop-shadow(0 20px 40px rgba(0, 180, 219, 0.25));
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  50% {
-    transform: translateY(-12px);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-mark {
-    animation: none;
-  }
 }
 
 @media (max-width: 991.98px) {

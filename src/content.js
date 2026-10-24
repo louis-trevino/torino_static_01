@@ -23,6 +23,34 @@ export const hero = {
     'Our consulting firm helps businesses break down rigid legacy systems into agile, scalable, and secure infrastructures that drive innovation.',
 }
 
+// Messages for the six interactive nodes of the hero logo, clockwise from the top node.
+export const logoNodes = [
+  {
+    title: 'RAG Pipelines',
+    text: 'Find accurate answers for your organization using your Private Knowledge Base',
+  },
+  {
+    title: 'Agentic AI Apps',
+    text: 'Autonomous AI Agents that can handle the vast majority of your routine operations',
+  },
+  {
+    title: 'Human-in-the-Loop Safeguards',
+    text: 'Combines AI autonomy with defined human approval boundaries that enforce your business rules',
+  },
+  {
+    title: 'Agentic Research Engines',
+    text: 'Get complex research results (e.g. market research) delivered to your inbox',
+  },
+  {
+    title: 'Agentic Telephony Apps',
+    text: 'A phone call comes in; a structured, documented resolution comes out',
+  },
+  {
+    title: 'Microservice Integration',
+    text: 'Agentic AI apps that can leverage your existing microservices',
+  },
+]
+
 export const services = [
   {
     icon: 'bi-robot',
